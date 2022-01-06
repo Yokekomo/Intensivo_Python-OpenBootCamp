@@ -21,7 +21,7 @@ barbottom = '-----------------------------------------'
 myagenda = {}
 
 def menu():
-    print(f'{barhead}\n1. {addoption}\n2. {searchphone}\n3. {searchoption}\n4. {printoption}\n{barbottom}')
+    print(f'{barhead}\n1. {addoption}\n2. {searchphone}\n3. {searchoption}\n{barbottom}')
     chousemenu = input('Introduce una opción del menu: ')
     print(f'{barbottom}')
     if chousemenu == '1':
