@@ -33,7 +33,7 @@ def temperatura_max_min_ciudad():
         temperatura_min = round(menu_tiempo['temp_min'])
         return f'Temperatura maxima: {temperatura_max}º\nTemperatura minima: {temperatura_min}º'
     else:
-        print('Ciudad no encontrada.')
+        return 'Ciudad no encontrada.'
 
 
 print(temperatura_max_min_ciudad())
