@@ -11,7 +11,7 @@ Aprender a trabajar con ficheros
 Usar la librería pandas de Python
 
 """
-import csv
+
 
 import pandas as pd
 
