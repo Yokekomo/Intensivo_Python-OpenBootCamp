@@ -17,15 +17,6 @@ Objetivo:
 - Mejorar la capacidad algorítmica.
 
 """
-import random
-
-diccionario1 = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': 6, 'g': 7, 'h': 8, 'i': 9, 'j': 10, 'k': 11, 'l': 12,
-                'm': 13, 'n': 14, 'ñ': 15, 'o': 16, 'p': 17, 'q': 18, 'r': 19, 's': 20, 't': 21, 'u': 22, 'v': 23,
-                'w': 24, 'x': 25, 'y': 26, 'z': 27, 'A': 28, 'B': 29, 'C': 30, 'D': 31, 'E': 32, 'F': 33, 'G': 34,
-                'H': 35, 'I': 36, 'J': 37, 'K': 38, 'L': 39, 'M': 40, 'N': 41, 'Ñ': 42, 'O': 43, 'P': 44, 'Q': 45,
-                'R': 46, 'S': 47, 'T': 48, 'U': 49, 'V': 50, 'W': 51, 'X': 52, 'Y': 53, 'Z': 54, '0': 55, '1': 56,
-                '2': 57, '3': 58, '4': 59, '5': 60, '6': 61, '7': 62, '8': 63, '9': 64}
-
 
 class Encriptar:
 
@@ -112,7 +103,7 @@ class Encriptar:
             self.__crypto += 'z'
 
         while len(self.__crypto) < 32:
-            self.__crypto += random.choice(list(diccionario1.keys()))
+            self.__crypto += self.__crypto
 
         while len(self.__crypto) > 32:
             self.__crypto = self.__crypto[:-1]
